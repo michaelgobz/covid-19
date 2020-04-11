@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>
+        COVID_19_UI
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS File -->
+    <link href="./public/styles.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <fieldset>
+                <!-- Form Name -->
+                <legend><b>Data Entry Form</b></legend><br>
+                <!--population input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">population</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <input name="first_name" data-population placeholder="population" class="form-control" type="number">
+                        </div>
+                    </div>
+                </div>
+                <!--timeToElapse input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">timeToElapse</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <input name="last_name" data-time-to-elapse placeholder="timeToElapse" class="form-control" type="number">
+                        </div>
+                    </div>
+                </div>
+                <!--reportedCases input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">reportedCases</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <input name="reportedCases" data-reported-cases placeholder="reportedCases " class="form-control" type="number">
+                        </div>
+                    </div>
+                </div>
+                <!-- totalHospitalBeds input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">totalHospitalBeds</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <input name="totalHospitalBeds" data-total-hospital-beds placeholder="totalHospitalBeds" class="form-control" type="number">
+                        </div>
+                    </div>
+                </div>
+                <!-- periodType input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">periodType</label>
+                    <div class="col-md-4 selectContainer">
+                        <div class="input-group">
+                            <select name="periodType" class="form-control selectpicker">
+                                <option value="">periodType</option>
+                                <option>days</option>
+                                <option>weeks</option>
+                                <option>months</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- button submit-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button data-go-estimate type="submit" class="btn btn-warning" onclick="alert('hai this feature is till being implemented')">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <!--js lib deps-->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
