@@ -1,12 +1,14 @@
-﻿<html lang="en-us">
+﻿<!DOCTYPE html>
+<html lang="en-us">
 <head>
     <title>
         COVID_19_UI
     </title>
     <meta charset="utf-8" />
+    <meta name="Description" content="The data entry form for the data">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS File -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -16,46 +18,46 @@
                 <legend><b>Data Entry Form</b></legend><br>
                 <!--population input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">population</label>
+                    <label class="col-md-4 control-label" for="population">population</label>
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
-                            <input name="population" data-population placeholder="population" class="form-control" type="number">
+                            <input id="population" name="population" data-population placeholder="population" class="form-control" type="number">
                         </div>
                     </div>
                 </div>
                 <!--timeToElapse input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">timeToElapse</label>
+                    <label class="col-md-4 control-label" for="timeToElapse">timeToElapse</label>
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
-                            <input name="timeToElapse" data-time-to-elapse placeholder="timeToElapse" class="form-control" type="number">
+                            <input id="timeToElapse" name="timeToElapse" data-time-to-elapse placeholder="timeToElapse" class="form-control" type="number">
                         </div>
                     </div>
                 </div>
                 <!--reportedCases input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">reportedCases</label>
+                    <label class="col-md-4 control-label" for="reportedCases">reportedCases</label>
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
-                            <input name="reportedCases" data-reported-cases placeholder="reportedCases " class="form-control" type="number">
+                            <input id="reportedCases" name="reportedCases" data-reported-cases placeholder="reportedCases " class="form-control" type="number">
                         </div>
                     </div>
                 </div>
                 <!-- totalHospitalBeds input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">totalHospitalBeds</label>
+                    <label class="col-md-4 control-label" for="totalHospitalBeds">totalHospitalBeds</label>
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
-                            <input name="totalHospitalBeds" data-total-hospital-beds placeholder="totalHospitalBeds" class="form-control" type="number">
+                            <input id="totalHospitalBeds" name="totalHospitalBeds" data-total-hospital-beds placeholder="totalHospitalBeds" class="form-control" type="number">
                         </div>
                     </div>
                 </div>
                 <!-- periodType input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">periodType</label>
+                    <label class="col-md-4 control-label" for="periodType">periodType</label>
                     <div class="col-md-4 selectContainer">
                         <div class="input-group">
-                            <select name="periodType" class="form-control selectpicker">
+                            <select id="periodType" name="periodType" class="form-control selectpicker">
                                 <option value="">periodType</option>
                                 <option>days</option>
                                 <option>weeks</option>
@@ -66,10 +68,10 @@
                 </div>
                 <!-- button submit-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label"></label>
+                    <label class="col-md-4 control-label" for="submit">Submit</label>
                     <div class="col-md-4">
                         <br>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button data-go-estimate type="submit" class="btn btn-warning" onclick="alert('hai this feature is till being implemented')">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id="submit" data-go-estimate type="submit" class="btn btn-warning" onclick="alert('hai this feature is till being implemented')">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
                     </div>
                 </div>
             </fieldset>
